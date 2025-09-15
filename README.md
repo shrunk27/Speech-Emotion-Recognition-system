@@ -37,10 +37,38 @@ It leverages the **RAVDESS dataset** for training and uses **Librosa** for featu
 3. **Run the notebook for training** 
     jupyter notebook SpeechEmotionRecognition.ipynb
 
+
+## 📂 Project Structure
+ ```bash
+speech-emotion-recognition/
+│-- data/                  # Dataset (RAVDESS)
+│-- models/                # Saved models
+│-- SpeechEmotionRecognition.ipynb  # Training Notebook
+│-- app.py                 # Gradio app for deployment
+│-- requirements.txt       # Dependencies
+│-- README.md              # Project documentation
+ ```
+
+## 🔧 Configuration
+
+- Dataset: RAVDESS
+- Sample rate: 22050 Hz
+- Features extracted: MFCCs, Chroma, ZCR, Spectral Contrast, Tonnetz
+
+## 🧪 Testing
+
+- Tested on RAVDESS dataset (speech subset)
+- Achieved 54%+ accuracy on test set
+
 ## 📊 Results
 
 - Achieved 54%+ test accuracy on the RAVDESS dataset
 - Deployed an interactive Gradio app for real-time voice emotion detection
+
+## 👨‍💻 Authors / Credits
+
+- Developed by Shrunkhala Sisodia 
+- Dataset: RAVDESS
 
 ## 📌 Future Improvements
 
