@@ -32,10 +32,12 @@ It leverages the **RAVDESS dataset** for training and uses **Librosa** for featu
    cd speech-emotion-recognition
 
 2. **Install dependencies** 
-    pip install -r requirements.txt
+     ```bash
+     pip install -r requirements.txt
 
 3. **Run the notebook for training** 
-    jupyter notebook SpeechEmotionRecognition.ipynb
+     ```bash
+     jupyter notebook SpeechEmotionRecognition.ipynb
 
 
 ## 📂 Project Structure
@@ -67,7 +69,10 @@ speech-emotion-recognition/
 
 ## 👨‍💻 Authors / Credits
 
-- Developed by Shrunkhala Sisodia 
+- Developed by Shrunkhala Sisodia
+- 🎓 Master’s in Business Intelligence & Analytics
+- 🌍 Location: Ahmedabad, India
+- 🔗[LinkedIn](https://www.linkedin.com/in/shrunkhalasandeepsisodia/)
 - Dataset: RAVDESS
 
 ## 📌 Future Improvements
