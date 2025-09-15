@@ -1,65 +1,50 @@
-# 🎤 Speech Emotion Recognition using ANN
+# 🎙️ Speech Emotion Recognition using ANN  
 
-This project is a Speech Emotion Recognition (SER) system that uses audio recordings to predict human emotions such as happy, sad, angry, etc. It is built using **Artificial Neural Networks (ANN)** with **MFCC and other audio features** extracted via `librosa`, trained on the **RAVDESS dataset**.
+## 📌 Project Overview  
+This project focuses on **Speech Emotion Recognition (SER)** using an **Artificial Neural Network (ANN)**.  
+The system classifies human emotions (such as *happy, sad, angry, fearful, etc.*) from speech signals by extracting relevant audio features.  
 
----
-
-## 📁 Dataset
-
-**RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song)**  
-- [Download RAVDESS Dataset](https://zenodo.org/record/1188976)  
-- Includes speech recordings of 24 professional actors expressing various emotions.  
-- Emotions: `neutral`, `calm`, `happy`, `sad`, `angry`, `fearful`, `disgust`, `surprised`
+It leverages the **RAVDESS dataset** for training and uses **Librosa** for feature extraction, **TensorFlow/Keras** for deep learning, and **Gradio** for deployment.  
 
 ---
 
-## 🧠 Features Extracted
-
-Using `librosa`, the following audio features are extracted:
-- MFCC (Mel Frequency Cepstral Coefficients)
-- Chroma STFT
-- Zero Crossing Rate
-- Spectral Contrast
-- Tonnetz
-
-Each audio file is transformed into a numerical feature vector for ANN input.
+## ⚡ Key Features  
+- 🎵 **Audio Feature Extraction**: MFCCs, Chroma, Zero Crossing Rate, Spectral Contrast, and Tonnetz  
+- 🧠 **Deep Learning Model**: Artificial Neural Network (ANN) with TensorFlow/Keras  
+- 📊 **Model Performance**: Achieved **54%+ test accuracy** on emotion classification  
+- 🌐 **Deployment**: Interactive Gradio interface for real-time emotion recognition  
+- 📂 **Dataset**: RAVDESS Emotional Speech Dataset  
 
 ---
 
-## 🏗️ Model Architecture
-
-A simple ANN (fully-connected neural network) is used:
-- Input: 68-dimensional feature vector
-- Hidden layers: Dense layers with `ReLU` activation
-- Output: Softmax layer with 8 emotion classes
+## 🛠️ Tech Stack  
+- **Programming Language**: Python  
+- **Libraries**: TensorFlow, Keras, Scikit-learn, Librosa, Pandas, NumPy, Matplotlib, Seaborn, Gradio  
+- **Tools**: Jupyter Notebook, GitHub  
 
 ---
 
-## 🔧 Tools & Libraries
+## 🚀 How to Run  
 
-- Python
-- `librosa` (feature extraction)
-- `scikit-learn` (scaling, label encoding)
-- `TensorFlow / Keras` (model building)
-- `Gradio` (deployment interface)
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/speech-emotion-recognition.git
+   cd speech-emotion-recognition
 
----
+2. **Install dependencies** 
+    pip install -r requirements.txt
 
-## 📊 Accuracy
+3. **Run the notebook for training** 
+    jupyter notebook SpeechEmotionRecognition.ipynb
 
-- **Training Accuracy**: ~85%  
-- **Testing Accuracy**: ~54%  
-(*Performance may improve with CNNs, data augmentation, or deeper architectures.*)
+## 📊 Results
 
----
+- Achieved 54%+ test accuracy on the RAVDESS dataset
+- Deployed an interactive Gradio app for real-time voice emotion detection
 
-## 🚀 Deployment
+## 📌 Future Improvements
 
-The trained model is deployed using **Gradio**. You can upload any `.wav` file and get the predicted emotion.
-
-## Credits
--Librosa
--RAVDESS Dataset
--TensorFlow
--Gradio
+- Improve accuracy by experimenting with CNN/LSTM models
+- Test on larger and diverse datasets
+- Integrate with a real-time speech recognition pipeline 
 
