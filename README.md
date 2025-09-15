@@ -45,7 +45,7 @@ It leverages the **RAVDESS dataset** for training and uses **Librosa** for featu
 speech-emotion-recognition/
 │-- data/                  # Dataset (RAVDESS)
 │-- models/                # Saved models
-│-- SpeechEmotionRecognition.ipynb  # Training Notebook
+│-- "Speech Emotion Recognition using ANN.ipynb"  # Training Notebook
 │-- app.py                 # Gradio app for deployment
 │-- requirements.txt       # Dependencies
 │-- README.md              # Project documentation
