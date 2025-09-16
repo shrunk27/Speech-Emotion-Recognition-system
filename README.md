@@ -41,7 +41,7 @@ It leverages the **RAVDESS dataset** for training and uses **Librosa** for featu
 
 
 ## 📂 Project Structure
- ```bash
+ ```graphql
 speech-emotion-recognition/
 │-- data/                  # Dataset (RAVDESS)
 │-- models/                # Saved models
